@@ -1,15 +1,15 @@
 {
   "manifest_version": 2,
 
-  "name": "GTmetrix Analyzer Plugin",
-  "description": "This extension will analyze a page using GTmetrix",
+  "name": "Article Summarizer",
+  "description": "This extension will summarize a long article using the text processing API SMMRY.",
   "version": "1.0",
-
   "browser_action": {
    "default_icon": "icon.png",
-   "default_popup": "popup.html"
+   "default_popup": "popup.html" 
   },
   "permissions": [
-   "activeTab"
+   "activeTab",
+   "http://api.smmry.com/*"
    ]
 }

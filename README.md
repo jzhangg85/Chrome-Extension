@@ -5,7 +5,7 @@ This implementation of a Chrome Extension processes an active tab containing an 
 ## Instructions and Functionality
 From the GitHub page, clone the repository (a folder named article_summarizer) containing four files: manifest.json, popup.html, popup.js, and icon.png. Open up the Chrome browser, open More Tools -> Extensions. In the Extensions tab, enable Developer Mode and click "Load unpacked extension." Select the folder named article_summarizer. You should see an icon of a red book appear next to the URL bar in the browser. 
 
-While on a long article, click the red icon and the "Summarize Article" button. The extension will return the article summary with other relevant information from the article.  
+While on a long article, click the red icon to open the extension. Click the "Summarize Article" button once to prevent exhaustion of the API key and wait a few seconds for the summary to appear. The extension will return the article summary with other relevant information from the article.  
 
 Note that in the limited usage of the text processing API SMMRY, the API is limited to 10 requests daily. 
 

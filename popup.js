@@ -1,12 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var checkPageButton = document.getElementById('checkPage');
-  checkPageButton.addEventListener('click', function() {
+  var saveActionButton = document.getElementById('saveActionId');
+  saveActionButton.addEventListener('click', function() {
 
     chrome.tabs.getSelected(null, function(tab) {
-      d = document;
+      d = document; 
+      var url_link = tab.url 
 
       var f = d.createElement('form');
-      f.action = 'http://gtmetrix.com/analyze.html?bm';
+      f.action = 'smmry.com';
       f.method = 'post';
       var i = d.createElement('input');
       i.type = 'hidden';
